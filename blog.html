@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUR BLOCKS</title>
+    <style>
+        .container{
+            border: 3px solid transparent;
+            width: 70%;
+            height: auto;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+
+        }
+        .content{
+            text-align: center;
+            text-transform: uppercase;
+            margin: 20px;
+
+        }
+        .cards{
+            border: 3px solid transparent;
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 450px;
+            grid-gap: 20px;
+
+        }
+        .cards>div{
+            border: 3px solid transparent;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+        }
+        img{
+            width: 100%;
+        }
+        p{
+            color: #9b9b9b;
+            text-align: justify;
+        }
+        span{
+            color: black;
+            font-weight: 900;
+        }
+        @media screen and (min-width:450px) and (max-width:920px) {
+            .container{
+                border: 3px solid transparent;
+                width: 80%;
+                height: auto;
+                margin: auto;
+            }
+            .cards{
+                border: 3px solid transparent;
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: 400px 400px;
+                grid-gap: 30px;
+
+            }
+
+
+
+        }
+        @media screen and (min-width:0px) and (max-width:450px) {
+            .container{
+                border: 3px solid transparent;
+                width: 90%;
+                height: auto;
+                margin: auto;
+            }
+            .cards{
+                border: 3px solid transparent;
+                width: 80%;
+                height: auto;
+                display: grid;
+                margin: auto;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: 450px 450px 450px;
+                grid-gap: 50px;
+
+            }
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Our blog</h1>
+        </div>
+        <div class="cards">
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg/1200px-Altja_j%C3%B5gi_Lahemaal.jpg" alt="">
+                <h3> National Geographic Magazine, National Wildlife Magazine and Audubon Magazine </h3>
+                <p>By <span>JSTOR </span> on <span>December 22, 2019</span></p>
+                <p class="content1">
+                    Natural sources are popular places for nature photography. Lahemaa National Park in Estonia.
+                </p>
+
+            </div>
+            <div>
+                <img src="https://cdn.pixabay.com/photo/2021/11/22/05/02/dalmatian-6815838__340.jpg" alt="">
+                <h3>Royalty-free images and stock photos of dogs and puppies in worlds</h3>
+                <p>By <span>JERCY</span> on <span>July 15, 2014</span></p>
+                <p class="content1">
+                    Dogs are mans best friend, not only in life, but in a host of creative projects as well. 
+                </p>
+
+            </div>
+            <div>
+                <img src="https://cdn.pixabay.com/photo/2022/10/19/11/09/fall-7532120__340.jpg" alt="">
+                <h3> landscapes, wildlife, plants, and close-ups of natural scenes and textures</h3>
+                <p>By <span>JULIUEN PERRIS</span> on <span>July 28, 2011</span></p>
+                <p class="content1">
+                    One touch of nature makes the whole world kin.” “Look deep into nature, and then you will understand everything better.” 
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
